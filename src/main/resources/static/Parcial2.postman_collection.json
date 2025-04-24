@@ -1,0 +1,323 @@
+{
+	"info": {
+		"_postman_id": "599ac892-e41a-47be-838d-992ccbc37649",
+		"name": "Parcial2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43516578",
+		"_collection_link": "https://juanftp22.postman.co/workspace/JuanFTP22's-Workspace~3374262a-c1b0-4c19-8de9-d2dc0c89c42f/collection/43516578-599ac892-e41a-47be-838d-992ccbc37649?action=share&source=collection_link&creator=43516578"
+	},
+	"item": [
+		{
+			"name": "Jugador",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/jugadores/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"jugadores",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/jugadores/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"jugadores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Equipo",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/equipos/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"equipos",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/equipos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"equipos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EstadisticaJugador",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/estadisticas/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estadisticas",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/estadisticas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estadisticas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Partido",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/partidos/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"partidos",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/partidos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"partidos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actulizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fecha\": \"2024-04-22\",\r\n  \"estadio\": \"El Campín\",\r\n  \"golesLocal\": 3,\r\n  \"golesVisita\": 2,\r\n  \"equipoLocal\": {\r\n    \"idEquipo\": 1\r\n  },\r\n  \"equipoVisita\": {\r\n    \"idEquipo\": 2\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/partidos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"partidos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "añadir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fecha\": \"2024-04-22\",\r\n  \"estadio\": \"El Campín\",\r\n  \"golesLocal\": 3,\r\n  \"golesVisita\": 2,\r\n  \"equipoLocal\": {\r\n    \"idEquipo\": 1\r\n  },\r\n  \"equipoVisita\": {\r\n    \"idEquipo\": 2\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "ttp://localhost:8080/partidos/guardar",
+							"protocol": "ttp",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"partidos",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entrenador",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entrenadores/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entrenadores",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entrenadores/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entrenadores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "añadir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Juancho DT\",\r\n  \"especialidad\": \"Táctica ofensiva\",\r\n  \"equipo\": {\r\n    \"idEquipo\": 2\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/entrenadores/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entrenadores",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
